@@ -1,0 +1,71 @@
+{
+  "2025-06-15": {
+    "question": "Was this artwork donw by a woman?",
+    "artworks": [
+      {
+        "title": "Title 1",
+        "year": "1999",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": false
+      },
+      {
+        "title": "Title 2",
+        "year": "1999",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": false
+      },
+      {
+        "title": "Title 3",
+        "year": "1999",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": false
+      }
+    ]
+  },
+  "2025-06-14": {
+    "question": "Was this artwork donw by a man?",
+    "artworks": [
+      {
+        "title": "Title 1",
+        "year": "1999",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": false
+      },
+      {
+        "title": "Title 2",
+        "year": "1999",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": false
+      },
+      {
+        "title": "Title 3",
+        "year": "1999",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": false
+      }
+    ]
+  },
+  "2025-06-13": {
+    "question": "Was this artwork donw by an animal?",
+    "artworks": [
+      {
+        "title": "Title 1",
+        "year": "1999",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": false
+      },
+      {
+        "title": "Title 2",
+        "year": "1999",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": false
+      },
+      {
+        "title": "Title 3",
+        "year": "1999",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": false
+      }
+    ]
+  }
+}
