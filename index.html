@@ -1,36 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        h2 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-    </style>
-</head>
-<body>
-    <div>
-        <h1>Main Heading</h1>
-        <h2>Subheading</h2>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Museum Quiz Game</title>
+    </head>
+    <body>
+        <div class="game-container">
+            <div class="menu-screen">
+                <h1 class="menu-title">
+                    Art Quiz<br /><strong>Challenge</strong>
+                </h1>
+                <p class="menu-subtitle">Test your knowledge of art history</p>
+
+                <div class="menu-options">
+                    <button
+                        class="menu-option primary"
+                        onclick="startTodaysQuiz()"
+                    >
+                        Today's Quiz
+                    </button>
+                    <button class="menu-option" onclick="showArchive()">
+                        Quiz Archive
+                    </button>
+                </div>
+            </div>
+
+            <div class="game-screen" style="display: none">
+                <h1 class="question" id="quiz-question">Question Quiz here</h1>
+                <div class="timer">2:00</div>
+
+                <div class="card-container">
+                    <div class="swipe-hint left">NO</div>
+                    <div class="swipe-hint right">YES</div>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn btn-no" onclick="answerQuesiton(false)">
+                        <span class="arrow">←</span>
+                    </button>
+                    <button class="btn btn-yes" onclick="answerQuesiton(true)">
+                        <span class="arrow">→</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="results-screen" style="display: none">
+                <h1 class="results-title">Game Over!</h1>
+                <div class="results-stats">
+                    <div class="stat correct">
+                        <span class="stat-number" id="correct-count">0</span
+                        >Correct
+                    </div>
+                    <div class="stat incorrect">
+                        <span class="stat-number" id="incorrect-count">0</span
+                        >Incorrect
+                    </div>
+                </div>
+
+                <div class="results-buttons">
+                    <button class="restart-btn" onclick="restartGame()">
+                        Play Again
+                    </button>
+                    <button class="menu-btn" onclick="showArchive()">
+                        View Archive
+                    </button>
+                    <button class="back-btn" onclick="showMenu()">
+                        Main Menu
+                    </button>
+                </div>
+            </div>
+
+            <div class="archive-screen">
+                <h1 class="archive-title">Quiz Archive</h1>
+                <div class="archive-list" id="archive-list"></div>
+                <div class="results-buttons">
+                    <button class="menu-btn" onclick="startTodaysQuiz()">
+                        Today's Quiz
+                    </button>
+                    <button class="back-btn" onclick="showMenu()">
+                        Main Menu
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
