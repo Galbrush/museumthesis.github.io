@@ -31,22 +31,6 @@ function isTodaysQuizAvailable() {
   return getTodaysQuiz() !== null;
 }
 
-// Load quiz data from JSON file
-async function loadQuizData() {
-  try {
-    const response = await fetch("quiz-data.json");
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    quizDatabase = await response.json();
-    console.log("Quiz data loaded successfully");
-  } catch (error) {
-    console.error("Error loading quiz data:", error);
-    // Fallback to empty database if file can't be loaded
-    quizDatabase = {};
-  }
-}
-
 // Get game results from localStorage
 function getGameResultsFromStorage() {
   try {
@@ -67,16 +51,43 @@ function saveGameResultsToStorage(results) {
   }
 }
 
+// Load quiz data from JSON file
+async function loadQuizData() {
+  try {
+    const response = await fetch("quiz-data.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    quizDatabase = await response.json();
+    console.log("Quiz data loaded successfully");
+  } catch (error) {
+    console.error("Error loading quiz data:", error);
+    // Fallback to empty database if file can't be loaded
+    quizDatabase = {};
+  }
+}
+
 // Load game history from localStorage
 function loadGameHistory() {
   // Get all available quiz dates from the database and sort them
   const availableDates = Object.keys(quizDatabase).sort().reverse();
 
-  return availableDates.map((date) => ({
-    date: date,
-    title: formatDateForDisplay(date),
-    available: true,
-  }));
+  // Get saved results from localStorage
+  const savedResults = getGameResultsFromStorage();
+
+  return availableDates.map((date) => {
+    const savedResult = savedResults.find((result) => result.date === date);
+    return {
+      date: date,
+      title: formatDateForDisplay(date),
+      available: true,
+      played: !!savedResult,
+      score: savedResult ? `${savedResult.correct}/${savedResult.total}` : null,
+      accuracy: savedResult
+        ? Math.round((savedResult.correct / savedResult.total) * 100)
+        : null,
+    };
+  });
 }
 
 // Format date for display (e.g., "2025-06-15" -> "June 15th Quiz")
@@ -439,15 +450,6 @@ function startTimer() {
   gameTimer = setInterval(updateTimer, 1000);
 }
 
-// Initialize game - load quiz data and show menu
-async function initializeGame() {
-  await loadQuizData();
-  gameHistory = loadGameHistory();
-
-  // Update the "Today's Quiz" button based on availability
-  updateTodaysQuizButton();
-}
-
 // Update the Today's Quiz button based on availability
 function updateTodaysQuizButton() {
   const button = document.querySelector(".menu-option.primary");
@@ -468,6 +470,15 @@ function updateTodaysQuizButton() {
     button.style.opacity = "0.5";
     button.style.cursor = "not-allowed";
   }
+}
+
+// Initialize game - load quiz data and show menu
+async function initializeGame() {
+  await loadQuizData();
+  gameHistory = loadGameHistory();
+
+  // Update the "Today's Quiz" button based on availability
+  updateTodaysQuizButton();
 }
 
 // Start initialization when page loads
