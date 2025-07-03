@@ -17,13 +17,13 @@ let gameHistory = [];
 // Get today's date in YYYY-MM-DD format
 function getTodayDate() {
   const today = new Date();
+  console.log(today);
   return today.toISOString().split("T")[0];
 }
 
 // Get today's quiz
 function getTodaysQuiz() {
   const todayDate = getTodayDate();
-  console.log(todayDate);
   return quizDatabase[todayDate] || null;
 }
 
