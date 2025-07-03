@@ -1,69 +1,2187 @@
-{
-  "2025-07-02": {
-    "question": "Was this artwork donw by a womän?",
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-29": {
+    "question": "Is this artwork considered <strong>Minimalist</strong>?",
     "artworks": [
       {
-        "title": "Title 1",
+        "title": "Example Artwork",
         "year": "1999",
-        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
         "correct": false
       },
       {
-        "title": "Title 2",
+        "title": "Example Artwork",
         "year": "1999",
-        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
         "correct": false
       },
       {
-        "title": "Title 3",
+        "title": "Example Artwork",
         "year": "1999",
-        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-30": {
+    "question": "Was this artwork created for <strong>advertising</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-31": {
+    "question": "Does this artwork use <strong>bright colors</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  }
+}
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-20": {
+    "question": "Was this artwork created using <strong>watercolor</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-21": {
+    "question": "Does this artwork depict <strong>animals</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-22": {
+    "question": "Is this artwork considered <strong>Cubist</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-23": {
+    "question": "Was this artwork created in <strong>America</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-24": {
+    "question": "Does this artwork use <strong>symmetry</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-25": {
+    "question": "Is this artwork considered <strong>Pop Art</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-26": {
+    "question": "Does this artwork contain <strong>text</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-27": {
+    "question": "Was this artwork created using <strong>photography</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-28": {
+    "question": "Does this artwork show <strong>urban</strong> scenes?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-11": {
+    "question": "Was this artwork created by a <strong>French</strong> artist?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-12": {
+    "question": "Does this artwork show <strong>religious</strong> themes?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-13": {
+    "question": "Is this artwork larger than <strong>2 meters</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-14": {
+    "question": "Was this artwork created using <strong>digital</strong> techniques?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-15": {
+    "question": "Does this artwork contain <strong>human figures</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-16": {
+    "question": "Is this artwork considered <strong>Surrealist</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-17": {
+    "question": "Was this artwork sold for more than <strong>$1 million</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-18": {
+    "question": "Does this artwork use <strong>perspective</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-19": {
+    "question": "Is this artwork part of a <strong>series</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.{
+  "2025-07-01": {
+    "question": "Was this artwork done by a <strong>woman</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-02": {
+    "question": "Was this artwork created in the <strong>20th century</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
         "correct": false
       }
     ]
   },
   "2025-07-03": {
-    "question": "Was this artwork donw by a man?",
+    "question": "Is this artwork considered <strong>Abstract</strong>?",
     "artworks": [
       {
-        "title": "Title 1",
+        "title": "Example Artwork",
         "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-04": {
+    "question": "Was this artwork created before <strong>1950</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-05": {
+    "question": "Is this artwork from <strong>Europe</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-06": {
+    "question": "Does this artwork use <strong>warm colors</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-07": {
+    "question": "Is this artwork a <strong>portrait</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-08": {
+    "question": "Was this artwork created with <strong>oil paint</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      }
+    ]
+  },
+  "2025-07-09": {
+    "question": "Does this artwork depict <strong>nature</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      }
+    ]
+  },
+  "2025-07-10": {
+    "question": "Is this artwork considered <strong>Impressionist</strong>?",
+    "artworks": [
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": true
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpeg",
+        "correct": false
+      },
+      {
+        "title": "Example Artwork",
+        "year": "1999",
+        "image": "https://smarthistory.org/wp-content/uploads/2021/12/Edvard_Munch_-{
+  "2025-06-15": {
+    "question": "Was this artwork done by a <strong>woman</strong>?",
+    "artworks": [
+      {
+        "title": "The Starry Night",
+        "year": "1889",
         "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
         "correct": false
       },
       {
-        "title": "Title 2",
-        "year": "1999",
-        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "title": "Self-Portrait with Thorn Necklace",
+        "year": "1940",
+        "image": "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "Water Lilies",
+        "year": "1919",
+        "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop",
         "correct": false
       },
       {
-        "title": "Title 3",
-        "year": "1999",
+        "title": "The Dinner Party Study",
+        "year": "1974",
+        "image": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "Les Demoiselles d'Avignon",
+        "year": "1907",
         "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
         "correct": false
       }
     ]
   },
-  "2025-07-04": {
-    "question": "Was this artwork donw by an animal?",
+  "2025-06-14": {
+    "question": "Was this artwork created in the <strong>20th century</strong>?",
     "artworks": [
       {
-        "title": "Title 1",
+        "title": "Spider",
         "year": "1999",
+        "image": "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "The Persistence of Memory",
+        "year": "1931",
+        "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "Untitled (Your Body is a Battleground)",
+        "year": "1989",
+        "image": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "Guernica",
+        "year": "1937",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "The Birth of Venus",
+        "year": "1486",
+        "image": "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=400&h=300&fit=crop",
+        "correct": false
+      }
+    ]
+  },
+  "2025-06-13": {
+    "question": "Is this artwork considered <strong>Abstract</strong>?",
+    "artworks": [
+      {
+        "title": "Campbell's Soup Cans",
+        "year": "1962",
         "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
         "correct": false
       },
       {
-        "title": "Title 2",
-        "year": "1999",
-        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "title": "Infinity Nets",
+        "year": "1959",
+        "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "The Great Wave",
+        "year": "1831",
+        "image": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=300&fit=crop",
         "correct": false
       },
       {
-        "title": "Title 3",
-        "year": "1999",
+        "title": "Untitled Film Still #21",
+        "year": "1978",
+        "image": "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=400&h=300&fit=crop",
+        "correct": false
+      },
+      {
+        "title": "The Scream",
+        "year": "1893",
         "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": false
+      }
+    ]
+  },
+  "2025-06-12": {
+    "question": "Was this artwork created before <strong>1950</strong>?",
+    "artworks": [
+      {
+        "title": "The Two Fridas",
+        "year": "1939",
+        "image": "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "American Gothic",
+        "year": "1930",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "Balloon Dog",
+        "year": "1994",
+        "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop",
+        "correct": false
+      },
+      {
+        "title": "Red Room (Parents)",
+        "year": "1946",
+        "image": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "The Thinker",
+        "year": "1904",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": true
+      }
+    ]
+  },
+  "2025-06-11": {
+    "question": "Is this artwork from <strong>Europe</strong>?",
+    "artworks": [
+      {
+        "title": "Girl with a Pearl Earring",
+        "year": "1665",
+        "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "The Ambassadors",
+        "year": "1533",
+        "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "Puppy",
+        "year": "1992",
+        "image": "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=400&h=300&fit=crop",
+        "correct": false
+      },
+      {
+        "title": "The Dance",
+        "year": "1909",
+        "image": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=400&h=300&fit=crop",
+        "correct": true
+      },
+      {
+        "title": "Woman I",
+        "year": "1950",
+        "image": "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=400&h=300&fit=crop",
         "correct": false
       }
     ]
