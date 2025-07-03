@@ -17,7 +17,6 @@ let gameHistory = [];
 // Get today's date in YYYY-MM-DD format
 function getTodayDate() {
   const today = new Date();
-  console.log(today);
   return today.toISOString().split("T")[0];
 }
 
@@ -72,11 +71,17 @@ async function loadQuizData() {
 function loadGameHistory() {
   // Get all available quiz dates from the database and sort them
   const availableDates = Object.keys(quizDatabase).sort().reverse();
+  const todayString = getTodayDate();
+
+  // Filter to only show dates from today and earlier (no future dates)
+  const pastAndTodayDates = availableDates.filter(
+    (date) => date <= todayString,
+  );
 
   // Get saved results from localStorage
   const savedResults = getGameResultsFromStorage();
 
-  return availableDates.map((date) => {
+  return pastAndTodayDates.map((date) => {
     const savedResult = savedResults.find((result) => result.date === date);
     return {
       date: date,
