@@ -47,6 +47,26 @@ async function loadQuizData() {
   }
 }
 
+// Get game results from localStorage
+function getGameResultsFromStorage() {
+  try {
+    const saved = localStorage.getItem("artQuizResults");
+    return saved ? JSON.parse(saved) : [];
+  } catch (error) {
+    console.error("Error loading game results from localStorage:", error);
+    return [];
+  }
+}
+
+// Save game results to localStorage
+function saveGameResultsToStorage(results) {
+  try {
+    localStorage.setItem("artQuizResults", JSON.stringify(results));
+  } catch (error) {
+    console.error("Error saving game results to localStorage:", error);
+  }
+}
+
 // Load game history from localStorage
 function loadGameHistory() {
   // Get all available quiz dates from the database and sort them
