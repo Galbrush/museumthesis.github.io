@@ -23,6 +23,7 @@ function getTodayDate() {
 // Get today's quiz
 function getTodaysQuiz() {
   const todayDate = getTodayDate();
+  console.log(todayDate);
   return quizDatabase[todayDate] || null;
 }
 
