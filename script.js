@@ -192,7 +192,7 @@ function populateArchive() {
             <div class="archive-date">${quiz.title}</div>
             <div class="archive-score">${scoreDisplay}</div>
         `;
-    item.onclick = () => startArchiveQuiz(quiz.date);
+    item.onclick = () => startArchiveQuiz(quiz.quizType);
     archiveList.appendChild(item);
   });
 }

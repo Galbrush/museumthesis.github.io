@@ -1,5 +1,5 @@
 {
-  "2025-07-01": {
+  "today": {
     "question": "Was this artwork done by a <strong>woman</strong>?",
     "artworks": [
       {
@@ -34,7 +34,7 @@
       }
     ]
   },
-  "2025-07-02": {
+  "yesterday": {
     "question": "Was this artwork created in the <strong>20th century</strong>?",
     "artworks": [
       {
@@ -69,7 +69,7 @@
       }
     ]
   },
-  "2025-07-03": {
+  "day-before-yesterday": {
     "question": "Is this artwork considered <strong>Abstract</strong>?",
     "artworks": [
       {
