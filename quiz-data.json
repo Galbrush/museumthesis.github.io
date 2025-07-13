@@ -1,6 +1,6 @@
 {
   "today": {
-    "question": "Was this artwork done by a <strong>woman</strong>?",
+    "question": "Is this artwork done by a <strong>woman</strong>?",
     "artworks": [
       {
         "title": "Example Artwork",
