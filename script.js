@@ -5,8 +5,6 @@ let currentQuiz = null;
 let currentCardIndex = 0;
 let correctAnswers = 0;
 let incorrectAnswers = 0;
-let gameTimer;
-let timeRemaining = 116; // 1:56 in seconds
 let isDragging = false;
 let startX = 0;
 let startY = 0;
@@ -361,11 +359,9 @@ function startArchiveQuiz(quizType) {
   currentCardIndex = 0;
   correctAnswers = 0;
   incorrectAnswers = 0;
-  timeRemaining = 116;
   playerAnswers = []; // Reset player answers
 
   loadCards();
-  startTimer();
 }
 
 function formatDate(dateString) {
@@ -416,26 +412,17 @@ function startTodaysQuiz() {
   currentCardIndex = 0;
   correctAnswers = 0;
   incorrectAnswers = 0;
-  timeRemaining = 116;
   playerAnswers = []; // Reset player answers
 
   loadCards();
-  startTimer();
 }
 
-function formatTime(seconds) {
-  const minutes = Math.floor(seconds / 60);
-  const remainingSeconds = seconds % 60;
-  return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
-}
-
-function updateTimer() {
-  document.querySelector(".timer").textContent = formatTime(timeRemaining);
-  if (timeRemaining <= 0) {
-    endGame();
-  } else {
-    timeRemaining--;
-  }
+function endGame() {
+  saveGameResult();
+  document.querySelector(".game-screen").style.display = "none";
+  document.querySelector(".results-screen").style.display = "block";
+  document.getElementById("correct-count").textContent = correctAnswers;
+  document.getElementById("incorrect-count").textContent = incorrectAnswers;
 }
 
 function createCard(artwork, index) {
@@ -610,16 +597,11 @@ function answerQuestion(userAnswer) {
 }
 
 function endGame() {
-  clearInterval(gameTimer);
   saveGameResult();
   document.querySelector(".game-screen").style.display = "none";
   document.querySelector(".results-screen").style.display = "block";
   document.getElementById("correct-count").textContent = correctAnswers;
   document.getElementById("incorrect-count").textContent = incorrectAnswers;
-}
-
-function startTimer() {
-  gameTimer = setInterval(updateTimer, 1000);
 }
 
 // Update the Today's Quiz button based on availability
