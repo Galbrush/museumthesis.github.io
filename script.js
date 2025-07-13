@@ -13,6 +13,7 @@ let startY = 0;
 let currentX = 0;
 let currentY = 0;
 let gameHistory = [];
+let playerAnswers = []; // Track player answers for explanation screen
 
 // Get today's date in YYYY-MM-DD format
 function getTodayDate() {
@@ -226,6 +227,7 @@ function showMenu() {
   document.querySelector(".menu-screen").style.display = "flex";
   document.querySelector(".game-screen").style.display = "none";
   document.querySelector(".results-screen").style.display = "none";
+  document.querySelector(".explanation-screen").style.display = "none";
   document.querySelector(".archive-screen").style.display = "none";
 }
 
@@ -235,9 +237,69 @@ function showArchive() {
   document.querySelector(".menu-screen").style.display = "none";
   document.querySelector(".game-screen").style.display = "none";
   document.querySelector(".results-screen").style.display = "none";
+  document.querySelector(".explanation-screen").style.display = "none";
   document.querySelector(".archive-screen").style.display = "block";
 
   populateArchive();
+}
+
+function showExplanation() {
+  document.querySelector(".menu-screen").style.display = "none";
+  document.querySelector(".game-screen").style.display = "none";
+  document.querySelector(".results-screen").style.display = "none";
+  document.querySelector(".explanation-screen").style.display = "block";
+  document.querySelector(".archive-screen").style.display = "none";
+
+  populateExplanation();
+}
+
+function populateExplanation() {
+  const questionElement = document.getElementById("explanation-question");
+  const listElement = document.getElementById("explanation-list");
+
+  // Display the quiz question
+  questionElement.innerHTML = currentQuiz.question;
+
+  // Clear existing content
+  listElement.innerHTML = "";
+
+  if (playerAnswers.length === 0) {
+    listElement.innerHTML =
+      '<p style="opacity: 0.7; padding: 20px;">No answers to display.</p>';
+    return;
+  }
+
+  // Create explanation items for each artwork
+  playerAnswers.forEach((answer, index) => {
+    const artwork = currentQuiz.artworks[index];
+    const isCorrect = answer.userAnswer === artwork.correct;
+
+    const item = document.createElement("div");
+    item.className = isCorrect
+      ? "explanation-item correct"
+      : "explanation-item incorrect";
+
+    const statusText = isCorrect ? "Correct" : "Incorrect";
+    const statusClass = isCorrect ? "correct" : "incorrect";
+
+    const userAnswerText = answer.userAnswer ? "YES" : "NO";
+    const correctAnswerText = artwork.correct ? "YES" : "NO";
+
+    item.innerHTML = `
+      <div class="explanation-header">
+        <div class="explanation-title-year">
+          <div class="explanation-artwork-title">${artwork.title}</div>
+          <div class="explanation-artwork-year">${artwork.year}</div>
+        </div>
+        <div class="explanation-status ${statusClass}">${statusText}</div>
+      </div>
+      <div class="explanation-your-answer">
+        Your answer: ${userAnswerText} | Correct answer: ${correctAnswerText}
+      </div>
+    `;
+
+    listElement.appendChild(item);
+  });
 }
 
 function populateArchive() {
@@ -292,6 +354,7 @@ function startArchiveQuiz(quizType) {
   document.querySelector(".menu-screen").style.display = "none";
   document.querySelector(".game-screen").style.display = "block";
   document.querySelector(".results-screen").style.display = "none";
+  document.querySelector(".explanation-screen").style.display = "none";
   document.querySelector(".archive-screen").style.display = "none";
 
   // Reset game state
@@ -299,6 +362,7 @@ function startArchiveQuiz(quizType) {
   correctAnswers = 0;
   incorrectAnswers = 0;
   timeRemaining = 116;
+  playerAnswers = []; // Reset player answers
 
   loadCards();
   startTimer();
@@ -345,6 +409,7 @@ function startTodaysQuiz() {
   document.querySelector(".menu-screen").style.display = "none";
   document.querySelector(".game-screen").style.display = "block";
   document.querySelector(".results-screen").style.display = "none";
+  document.querySelector(".explanation-screen").style.display = "none";
   document.querySelector(".archive-screen").style.display = "none";
 
   // Reset game state
@@ -352,6 +417,7 @@ function startTodaysQuiz() {
   correctAnswers = 0;
   incorrectAnswers = 0;
   timeRemaining = 116;
+  playerAnswers = []; // Reset player answers
 
   loadCards();
   startTimer();
@@ -510,6 +576,13 @@ function answerQuestion(userAnswer) {
 
   const currentArtwork = currentQuiz.artworks[currentCardIndex];
   const isCorrect = userAnswer === currentArtwork.correct;
+
+  // Store the player's answer for the explanation screen
+  playerAnswers.push({
+    artwork: currentArtwork,
+    userAnswer: userAnswer,
+    isCorrect: isCorrect,
+  });
 
   if (isCorrect) {
     correctAnswers++;

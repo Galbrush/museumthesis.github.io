@@ -54,6 +54,28 @@
                     </div>
                 </div>
                 <div class="results-buttons">
+                    <button class="explanation-btn" onclick="showExplanation()">
+                        View Answers
+                    </button>
+                    <button class="restart-btn" onclick="restartGame()">
+                        Play Again
+                    </button>
+                    <button class="menu-btn" onclick="showArchive()">
+                        View Archive
+                    </button>
+                    <button class="back-btn" onclick="showMenu()">
+                        Main Menu
+                    </button>
+                </div>
+            </div>
+            <div class="explanation-screen" style="display: none">
+                <h1 class="explanation-title">Quiz Results</h1>
+                <div
+                    class="explanation-question"
+                    id="explanation-question"
+                ></div>
+                <div class="explanation-list" id="explanation-list"></div>
+                <div class="explanation-buttons">
                     <button class="restart-btn" onclick="restartGame()">
                         Play Again
                     </button>
