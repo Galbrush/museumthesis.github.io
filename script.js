@@ -245,6 +245,11 @@ function showArchive() {
 }
 
 function showExplanation() {
+  // Track explanation viewing
+  if (typeof clarity !== "undefined") {
+    clarity("event", "explanation_viewed", { quiz_type: currentQuiz.type });
+  }
+
   document.querySelector(".menu-screen").style.display = "none";
   document.querySelector(".game-screen").style.display = "none";
   document.querySelector(".results-screen").style.display = "none";
@@ -347,6 +352,11 @@ function startArchiveQuiz(quizType) {
     return;
   }
 
+  // Track archive quiz start
+  if (typeof clarity !== "undefined") {
+    clarity("event", "archive_quiz_started", { quiz_type: quizType });
+  }
+
   currentQuiz = { ...quiz, type: quizType }; // Add type for saving results
 
   // Update question from JSON
@@ -400,6 +410,11 @@ function startTodaysQuiz() {
     return;
   }
 
+  // Track quiz start
+  if (typeof clarity !== "undefined") {
+    clarity("event", "quiz_started", { quiz_type: "today" });
+  }
+
   currentQuiz = { ...todaysQuiz, type: "today" }; // Add type for saving results
 
   // Update question from JSON
@@ -421,6 +436,18 @@ function startTodaysQuiz() {
 }
 
 function endGame() {
+  // Track quiz completion
+  if (typeof clarity !== "undefined") {
+    clarity("event", "quiz_completed", {
+      quiz_type: currentQuiz.type,
+      score: correctAnswers,
+      total: correctAnswers + incorrectAnswers,
+      accuracy: Math.round(
+        (correctAnswers / (correctAnswers + incorrectAnswers)) * 100,
+      ),
+    });
+  }
+
   saveGameResult();
   document.querySelector(".game-screen").style.display = "none";
   document.querySelector(".results-screen").style.display = "block";
@@ -566,6 +593,16 @@ function answerQuestion(userAnswer) {
 
   const currentArtwork = currentQuiz.artworks[currentCardIndex];
   const isCorrect = userAnswer === currentArtwork.correct;
+
+  // Track answer with method detection
+  const answerMethod = isDragging ? "swipe" : "button";
+  if (typeof clarity !== "undefined") {
+    clarity("event", "question_answered", {
+      correct: isCorrect,
+      method: answerMethod,
+      question_number: currentCardIndex + 1,
+    });
+  }
 
   // Store the player's answer for the explanation screen
   playerAnswers.push({
