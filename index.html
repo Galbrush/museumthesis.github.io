@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Art Quiz Game</title>
+        <title>Museum Quiz Game</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -13,7 +13,6 @@
                     Art Quiz<br /><strong>Challenge</strong>
                 </h1>
                 <p class="menu-subtitle">Test your knowledge of art history</p>
-
                 <div class="menu-options">
                     <button
                         class="menu-option primary"
@@ -26,41 +25,38 @@
                     </button>
                 </div>
             </div>
-
             <div class="game-screen" style="display: none">
-                <h1 class="question" id="quiz-question">
-                    Was this artwork<br />done by a <strong>woman</strong>?
-                </h1>
-                <div class="timer">1:56</div>
-
+                <h1 class="question" id="quiz-question">Question Quiz here</h1>
+                <div class="timer">2:00</div>
                 <div class="card-container">
                     <div class="swipe-hint left">NO</div>
                     <div class="swipe-hint right">YES</div>
-                    <!-- Cards will be dynamically inserted here -->
                 </div>
-
                 <div class="buttons">
-                    <button class="btn btn-no" onclick="answerQuestion(false)">
+                    <button
+                        class="btn btn-no"
+                        onclick="handleButtonClick(false, this)"
+                    >
                         <span class="arrow">←</span>
-                        No
                     </button>
-                    <button class="btn btn-yes" onclick="answerQuestion(true)">
-                        Yes
+                    <button
+                        class="btn btn-yes"
+                        onclick="handleButtonClick(true, this)"
+                    >
                         <span class="arrow">→</span>
                     </button>
                 </div>
             </div>
-
             <div class="results-screen" style="display: none">
                 <h1 class="results-title">Game Over!</h1>
                 <div class="results-stats">
                     <div class="stat correct">
-                        <span class="stat-number" id="correct-count">0</span>
-                        Correct
+                        <span class="stat-number" id="correct-count">0</span
+                        >Correct
                     </div>
                     <div class="stat incorrect">
-                        <span class="stat-number" id="incorrect-count">0</span>
-                        Incorrect
+                        <span class="stat-number" id="incorrect-count">0</span
+                        >Incorrect
                     </div>
                 </div>
                 <div class="results-buttons">
@@ -75,12 +71,9 @@
                     </button>
                 </div>
             </div>
-
             <div class="archive-screen">
                 <h1 class="archive-title">Quiz Archive</h1>
-                <div class="archive-list" id="archive-list">
-                    <!-- Archive items will be populated here -->
-                </div>
+                <div class="archive-list" id="archive-list"></div>
                 <div class="results-buttons">
                     <button class="menu-btn" onclick="startTodaysQuiz()">
                         Today's Quiz
@@ -91,7 +84,6 @@
                 </div>
             </div>
         </div>
-
         <script src="script.js"></script>
     </body>
 </html>
