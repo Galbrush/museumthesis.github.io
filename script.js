@@ -252,7 +252,7 @@ function populateArchive() {
 
   gameHistory.forEach((quiz) => {
     const item = document.createElement("div");
-    item.className = "archive-item";
+    item.className = quiz.played ? "archive-item played" : "archive-item";
 
     let scoreDisplay = "Click to play →";
     if (quiz.played) {

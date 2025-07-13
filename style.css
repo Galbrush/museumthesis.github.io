@@ -346,8 +346,16 @@ body {
     transition: background 0.2s;
 }
 
+.archive-item.played {
+    background: rgba(104, 211, 145, 0.3);
+}
+
 .archive-item:hover {
     background: rgba(255, 255, 255, 0.2);
+}
+
+.archive-item.played:hover {
+    background: rgba(104, 211, 145, 0.4);
 }
 
 .archive-item:last-child {
