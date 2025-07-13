@@ -38,33 +38,33 @@
     "question": "Was this artwork created in the <strong>20th century</strong>?",
     "artworks": [
       {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/ff0000/ffffff?text=Artwork+1",
-        "correct": true
-      },
-      {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/00ff00/ffffff?text=Artwork+2",
+        "title": "The Starry Night",
+        "year": "1889",
+        "image": "",
         "correct": false
       },
       {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/0000ff/ffffff?text=Artwork+3",
+        "title": "Campbell's Soup Cans",
+        "year": "1962",
+        "image": "",
         "correct": true
       },
       {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/ffff00/000000?text=Artwork+4",
+        "title": "The Thinker",
+        "year": "1904",
+        "image": "",
+        "correct": true
+      },
+      {
+        "title": "Girl with a Pearl Earring",
+        "year": "1665",
+        "image": "",
         "correct": false
       },
       {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/ff00ff/ffffff?text=Artwork+5",
+        "title": "Guernica",
+        "year": "1937",
+        "image": "",
         "correct": true
       }
     ]

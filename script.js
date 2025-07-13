@@ -376,11 +376,29 @@ function createCard(artwork, index) {
   const card = document.createElement("div");
   card.className = "card";
   card.style.zIndex = currentQuiz.artworks.length - index;
-  card.innerHTML = `
+
+  // Check if artwork has an image
+  const hasImage = artwork.image && artwork.image.trim() !== "";
+
+  if (hasImage) {
+    // Card with image
+    card.innerHTML = `
         <img src="${artwork.image}" alt="${artwork.title}" class="card-image">
-        <h2 class="card-title">${artwork.title}</h2>
-        <p class="card-year">${artwork.year}</p>
+        <div class="card-content">
+            <h2 class="card-title">${artwork.title}</h2>
+            <p class="card-year">${artwork.year}</p>
+        </div>
     `;
+  } else {
+    // Card without image - add no-image class
+    card.classList.add("no-image");
+    card.innerHTML = `
+        <div class="card-content">
+            <h2 class="card-title">${artwork.title}</h2>
+            <p class="card-year">${artwork.year}</p>
+        </div>
+    `;
+  }
 
   // Add touch and mouse event listeners for swiping
   card.addEventListener("mousedown", handleStart);
