@@ -13,6 +13,12 @@ let currentY = 0;
 let gameHistory = [];
 let playerAnswers = []; // Track player answers for explanation screen
 
+// Privacy notice handling
+function acceptPrivacy() {
+  document.getElementById("privacy-notice").style.display = "none";
+  document.querySelector(".menu-screen").style.display = "flex";
+}
+
 // Get today's date in YYYY-MM-DD format
 function getTodayDate() {
   const today = new Date();

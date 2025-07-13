@@ -39,6 +39,54 @@
     --shadow-medium: rgba(0, 0, 0, 0.2);
 }
 
+/* Privacy Notice */
+.privacy-notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-gradient-start);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.privacy-content {
+    background: var(--overlay-light);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    color: var(--text-white);
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+}
+
+.privacy-content p {
+    font-size: clamp(16px, 3vh, 18px);
+    line-height: 1.5;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.privacy-btn {
+    background: var(--btn-blue);
+    color: var(--text-white);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-size: clamp(16px, 3vh, 18px);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.privacy-btn:hover {
+    background: var(--btn-blue-hover);
+}
+
 * {
     margin: 0;
     padding: 0;

@@ -24,7 +24,30 @@
     </head>
     <body>
         <div class="game-container">
-            <div class="menu-screen">
+            <!-- Privacy Notice -->
+            <div class="privacy-notice" id="privacy-notice">
+                <div class="privacy-content">
+                    <p>
+                        This research study records anonymous interactions for
+                        research purposes. No cookies or personal data are
+                        stored on your device.
+                    </p>
+                    <p
+                        style="
+                            font-size: 14px;
+                            opacity: 0.8;
+                            margin-bottom: 20px;
+                        "
+                    >
+                        Contact: cs2844@bath.ac.uk
+                    </p>
+                    <button class="privacy-btn" onclick="acceptPrivacy()">
+                        Continue to Game
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-screen" style="display: none">
                 <h1 class="menu-title">
                     Art Quiz<br /><strong>Challenge</strong>
                 </h1>
