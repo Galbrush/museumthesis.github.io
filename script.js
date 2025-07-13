@@ -22,8 +22,7 @@ function getTodayDate() {
 
 // Get today's quiz
 function getTodaysQuiz() {
-  const todayDate = getTodayDate();
-  return quizDatabase[todayDate] || null;
+  return quizDatabase["today"] || null;
 }
 
 // Check if today's quiz is available
