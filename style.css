@@ -19,6 +19,7 @@ body {
         sans-serif;
     background: linear-gradient(123deg, #2d3748, #1a202c);
     height: 100vh;
+    height: 100dvh;
     width: 100vw;
     display: flex;
     justify-content: center;
