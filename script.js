@@ -536,6 +536,22 @@ function answerQuestion(userAnswer) {
   }
 }
 
+// Add button animation function
+function animateButtonPress(button) {
+  button.style.transform = "scale(0.9)";
+  setTimeout(() => {
+    button.style.transform = "";
+  }, 150);
+}
+
+// Update button click handlers to include animation
+function handleButtonClick(userAnswer, button) {
+  animateButtonPress(button);
+  setTimeout(() => {
+    answerQuestion(userAnswer);
+  }, 100);
+}
+
 function endGame() {
   clearInterval(gameTimer);
   saveGameResult();
