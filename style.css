@@ -121,6 +121,9 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 0 20px;
+    /* Debug - remove this later */
+    border: 2px solid red;
+    min-height: 100px;
 }
 
 .btn {
