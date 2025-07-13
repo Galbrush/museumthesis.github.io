@@ -227,6 +227,9 @@ function showMenu() {
   document.querySelector(".results-screen").style.display = "none";
   document.querySelector(".explanation-screen").style.display = "none";
   document.querySelector(".archive-screen").style.display = "none";
+
+  // Update the Today's Quiz button when returning to menu
+  updateTodaysQuizButton();
 }
 
 function showArchive() {
@@ -604,12 +607,31 @@ function endGame() {
   document.getElementById("incorrect-count").textContent = incorrectAnswers;
 }
 
-// Update the Today's Quiz button based on availability
+// Update the Today's Quiz button based on availability and completion status
 function updateTodaysQuizButton() {
   const button = document.querySelector(".menu-option.primary");
   const todaysQuiz = getTodaysQuiz();
 
-  if (todaysQuiz) {
+  if (!todaysQuiz) {
+    button.textContent = "No Quiz Today";
+    button.disabled = true;
+    button.style.opacity = "0.5";
+    button.style.cursor = "not-allowed";
+    button.style.display = "block";
+    return;
+  }
+
+  // Check if today's quiz has been played
+  const savedResults = getGameResultsFromStorage();
+  const todayResult = savedResults.find(
+    (result) => result.quizType === "today",
+  );
+
+  if (todayResult) {
+    // User has already played today's quiz - hide the button
+    button.style.display = "none";
+  } else {
+    // User hasn't played today's quiz - show the button
     const todayDate = new Date().toLocaleDateString("en-US", {
       month: "long",
       day: "numeric",
@@ -618,11 +640,7 @@ function updateTodaysQuizButton() {
     button.disabled = false;
     button.style.opacity = "1";
     button.style.cursor = "pointer";
-  } else {
-    button.textContent = "No Quiz Today";
-    button.disabled = true;
-    button.style.opacity = "0.5";
-    button.style.cursor = "not-allowed";
+    button.style.display = "block";
   }
 }
 
