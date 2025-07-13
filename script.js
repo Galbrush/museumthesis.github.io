@@ -618,10 +618,6 @@ function endGame() {
   document.getElementById("incorrect-count").textContent = incorrectAnswers;
 }
 
-function restartGame() {
-  startTodaysQuiz();
-}
-
 function startTimer() {
   gameTimer = setInterval(updateTimer, 1000);
 }

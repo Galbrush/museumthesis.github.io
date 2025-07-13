@@ -306,7 +306,6 @@ body {
     width: 100%;
 }
 
-.restart-btn,
 .menu-btn,
 .back-btn,
 .explanation-btn {
@@ -323,7 +322,6 @@ body {
     min-width: 120px;
 }
 
-.restart-btn:hover,
 .menu-btn:hover,
 .explanation-btn:hover {
     background: #3182ce;
