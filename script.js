@@ -20,9 +20,33 @@ function getTodayDate() {
   return today.toISOString().split("T")[0];
 }
 
-// Get today's quiz
+// Get yesterday's date in YYYY-MM-DD format
+function getYesterdayDate() {
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  return yesterday.toISOString().split("T")[0];
+}
+
+// Get day before yesterday's date in YYYY-MM-DD format
+function getDayBeforeYesterdayDate() {
+  const dayBeforeYesterday = new Date();
+  dayBeforeYesterday.setDate(dayBeforeYesterday.getDate() - 2);
+  return dayBeforeYesterday.toISOString().split("T")[0];
+}
+
+// Get today's quiz (always returns the "today" quiz from JSON)
 function getTodaysQuiz() {
   return quizDatabase["today"] || null;
+}
+
+// Get yesterday's quiz (always returns the "yesterday" quiz from JSON)
+function getYesterdaysQuiz() {
+  return quizDatabase["yesterday"] || null;
+}
+
+// Get day before yesterday's quiz (always returns the "day-before-yesterday" quiz from JSON)
+function getDayBeforeYesterdaysQuiz() {
+  return quizDatabase["day-before-yesterday"] || null;
 }
 
 // Check if today's quiz is available
@@ -68,31 +92,77 @@ async function loadQuizData() {
 
 // Load game history from localStorage
 function loadGameHistory() {
-  // Get all available quiz dates from the database and sort them
-  const availableDates = Object.keys(quizDatabase).sort().reverse();
-  const todayString = getTodayDate();
+  // Create consistent archive with relative dates
+  const archiveQuizzes = [];
 
-  // Filter to only show dates from today and earlier (no future dates)
-  const pastAndTodayDates = availableDates.filter(
-    (date) => date <= todayString,
-  );
+  // Add today's quiz
+  const todaysQuiz = getTodaysQuiz();
+  if (todaysQuiz) {
+    const savedResults = getGameResultsFromStorage();
+    const todayResult = savedResults.find(
+      (result) => result.quizType === "today",
+    );
 
-  // Get saved results from localStorage
-  const savedResults = getGameResultsFromStorage();
-
-  return pastAndTodayDates.map((date) => {
-    const savedResult = savedResults.find((result) => result.date === date);
-    return {
-      date: date,
-      title: formatDateForDisplay(date),
+    archiveQuizzes.push({
+      date: getTodayDate(),
+      quizType: "today",
+      title: "Today's Quiz",
       available: true,
-      played: !!savedResult,
-      score: savedResult ? `${savedResult.correct}/${savedResult.total}` : null,
-      accuracy: savedResult
-        ? Math.round((savedResult.correct / savedResult.total) * 100)
+      played: !!todayResult,
+      score: todayResult ? `${todayResult.correct}/${todayResult.total}` : null,
+      accuracy: todayResult
+        ? Math.round((todayResult.correct / todayResult.total) * 100)
         : null,
-    };
-  });
+    });
+  }
+
+  // Add yesterday's quiz
+  const yesterdaysQuiz = getYesterdaysQuiz();
+  if (yesterdaysQuiz) {
+    const savedResults = getGameResultsFromStorage();
+    const yesterdayResult = savedResults.find(
+      (result) => result.quizType === "yesterday",
+    );
+
+    archiveQuizzes.push({
+      date: getYesterdayDate(),
+      quizType: "yesterday",
+      title: "Yesterday's Quiz",
+      available: true,
+      played: !!yesterdayResult,
+      score: yesterdayResult
+        ? `${yesterdayResult.correct}/${yesterdayResult.total}`
+        : null,
+      accuracy: yesterdayResult
+        ? Math.round((yesterdayResult.correct / yesterdayResult.total) * 100)
+        : null,
+    });
+  }
+
+  // Add day before yesterday's quiz
+  const dayBeforeYesterdaysQuiz = getDayBeforeYesterdaysQuiz();
+  if (dayBeforeYesterdaysQuiz) {
+    const savedResults = getGameResultsFromStorage();
+    const dayBeforeResult = savedResults.find(
+      (result) => result.quizType === "day-before-yesterday",
+    );
+
+    archiveQuizzes.push({
+      date: getDayBeforeYesterdayDate(),
+      quizType: "day-before-yesterday",
+      title: formatDateForDisplay(getDayBeforeYesterdayDate()),
+      available: true,
+      played: !!dayBeforeResult,
+      score: dayBeforeResult
+        ? `${dayBeforeResult.correct}/${dayBeforeResult.total}`
+        : null,
+      accuracy: dayBeforeResult
+        ? Math.round((dayBeforeResult.correct / dayBeforeResult.total) * 100)
+        : null,
+    });
+  }
+
+  return archiveQuizzes;
 }
 
 // Format date for display (e.g., "2025-06-15" -> "June 15th Quiz")
@@ -122,9 +192,9 @@ function formatDateForDisplay(dateString) {
 }
 
 function saveGameResult() {
-  const todayDate = getTodayDate();
   const gameResult = {
-    date: todayDate,
+    date: getTodayDate(),
+    quizType: currentQuiz.type, // Will be "today", "yesterday", or "day-before-yesterday"
     correct: correctAnswers,
     incorrect: incorrectAnswers,
     total: correctAnswers + incorrectAnswers,
@@ -134,8 +204,10 @@ function saveGameResult() {
   // Get existing results
   let savedResults = getGameResultsFromStorage();
 
-  // Remove any existing result for today (in case they replay)
-  savedResults = savedResults.filter((result) => result.date !== todayDate);
+  // Remove any existing result for this quiz type (in case they replay)
+  savedResults = savedResults.filter(
+    (result) => result.quizType !== gameResult.quizType,
+  );
 
   // Add new result
   savedResults.unshift(gameResult);
@@ -196,13 +268,23 @@ function populateArchive() {
   });
 }
 
-function startArchiveQuiz(quizDate) {
-  if (!quizDatabase[quizDate]) {
-    alert("Quiz not available for this date.");
+function startArchiveQuiz(quizType) {
+  let quiz = null;
+
+  if (quizType === "today") {
+    quiz = getTodaysQuiz();
+  } else if (quizType === "yesterday") {
+    quiz = getYesterdaysQuiz();
+  } else if (quizType === "day-before-yesterday") {
+    quiz = getDayBeforeYesterdaysQuiz();
+  }
+
+  if (!quiz) {
+    alert("Quiz not available.");
     return;
   }
 
-  currentQuiz = quizDatabase[quizDate];
+  currentQuiz = { ...quiz, type: quizType }; // Add type for saving results
 
   // Update question from JSON
   document.getElementById("quiz-question").innerHTML = currentQuiz.question;
@@ -251,13 +333,11 @@ function startTodaysQuiz() {
   const todaysQuiz = getTodaysQuiz();
 
   if (!todaysQuiz) {
-    alert(
-      `No quiz available for today (${getTodayDate()}). Please check back later!`,
-    );
+    alert("No quiz available for today. Please check back later!");
     return;
   }
 
-  currentQuiz = todaysQuiz;
+  currentQuiz = { ...todaysQuiz, type: "today" }; // Add type for saving results
 
   // Update question from JSON
   document.getElementById("quiz-question").innerHTML = currentQuiz.question;
