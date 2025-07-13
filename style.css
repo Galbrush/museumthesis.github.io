@@ -813,25 +813,3 @@ body {
 .swipe-hint.show {
     opacity: 0.8;
 }
-
-/* Responsive adjustments for very small screens */
-@media (max-height: 600px) {
-    .card-container {
-        height: 40vh;
-    }
-
-    .menu-options {
-        gap: 2vh;
-    }
-
-    .results-stats {
-        padding: 2vh;
-    }
-}
-
-/* Responsive adjustments for very large screens */
-@media (min-height: 900px) {
-    .card-container {
-        height: 60vh;
-    }
-}
