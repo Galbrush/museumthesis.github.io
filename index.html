@@ -33,16 +33,10 @@
                     <div class="swipe-hint right">YES</div>
                 </div>
                 <div class="buttons">
-                    <button
-                        class="btn btn-no"
-                        onclick="handleButtonClick(false, this)"
-                    >
+                    <button class="btn btn-no" onclick="answerQuestion(false)">
                         <span class="arrow">←</span>
                     </button>
-                    <button
-                        class="btn btn-yes"
-                        onclick="handleButtonClick(true, this)"
-                    >
+                    <button class="btn btn-yes" onclick="answerQuestion(true)">
                         <span class="arrow">→</span>
                     </button>
                 </div>
@@ -71,7 +65,7 @@
                     </button>
                 </div>
             </div>
-            <div class="archive-screen">
+            <div class="archive-screen" style="display: none">
                 <h1 class="archive-title">Quiz Archive</h1>
                 <div class="archive-list" id="archive-list"></div>
                 <div class="results-buttons">
