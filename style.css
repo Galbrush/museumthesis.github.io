@@ -126,7 +126,7 @@ body {
 .buttons {
     display: flex;
     gap: 40px;
-    align-items: center;
+    align-items: stretch;
     margin-top: 2vh;
     flex-shrink: 0;
 }
