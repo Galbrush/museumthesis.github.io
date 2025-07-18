@@ -53,72 +53,108 @@
     ]
   },
   "yesterday": {
-    "question": "Was this artwork created in the <strong>20th century</strong>?",
+    "question": "Which of the following describes an art movement?",
     "artworks": [
       {
-        "title": "The Starry Night",
-        "year": "1889",
-        "image": "",
-        "correct": false
-      },
-      {
-        "title": "Campbell's Soup Cans",
-        "year": "1962",
+        "title": "Cubism",
+        "year": "20th century",
         "image": "",
         "correct": true
       },
       {
-        "title": "The Thinker",
-        "year": "1904",
-        "image": "",
-        "correct": true
-      },
-      {
-        "title": "Girl with a Pearl Earring",
-        "year": "1665",
+        "title": "Proto-Digitalism",
+        "year": "1980s",
         "image": "",
         "correct": false
       },
       {
-        "title": "Guernica",
-        "year": "1937",
+        "title": "Pop Art",
+        "year": "1950s",
+        "image": "",
+        "correct": true
+      },
+      {
+        "title": "Fauvism",
+        "year": "1900s",
+        "image": "",
+        "correct": true
+      },
+      {
+        "title": "Empiricism",
+        "year": "1880s",
+        "image": "",
+        "correct": false
+      },
+      {
+        "title": "Structuralism",
+        "year": "2010s",
+        "image": "",
+        "correct": false
+      },
+      {
+        "title": "Dadaism",
+        "year": "1910s to 1920s",
+        "image": "",
+        "correct": true
+      },
+      {
+        "title": "Romanticism",
+        "year": "late 19th and 20th century",
         "image": "",
         "correct": true
       }
     ]
   },
   "day-before-yesterday": {
-    "question": "Is this artwork considered <strong>Abstract</strong>?",
+    "question": "Which of these instruments is a woodwind instrument?",
     "artworks": [
       {
-        "title": "Example Artwork",
-        "year": "1999",
+        "title": "Saxophone",
+        "year": "",
         "image": "https://via.placeholder.com/400x300/ff0000/ffffff?text=Artwork+1",
-        "correct": false
+        "correct": true
       },
       {
-        "title": "Example Artwork",
-        "year": "1999",
+        "title": "Trombone",
+        "year": "",
         "image": "https://via.placeholder.com/400x300/00ff00/ffffff?text=Artwork+2",
-        "correct": true
-      },
-      {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/0000ff/ffffff?text=Artwork+3",
         "correct": false
       },
       {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/ffff00/000000?text=Artwork+4",
+        "title": "Clarinet",
+        "year": "",
+        "image": "https://via.placeholder.com/400x300/0000ff/ffffff?text=Artwork+3",
         "correct": true
       },
       {
-        "title": "Example Artwork",
-        "year": "1999",
+        "title": "Trumpet",
+        "year": "",
+        "image": "https://via.placeholder.com/400x300/ffff00/000000?text=Artwork+4",
+        "correct": false
+      },
+      {
+        "title": "Flute",
+        "year": "",
+        "image": "https://via.placeholder.com/400x300/ff00ff/ffffff?text=Artwork+5",
+        "correct": true
+      },
+      {
+        "title": "Occarina",
+        "year": "",
+        "image": "https://via.placeholder.com/400x300/ff00ff/ffffff?text=Artwork+5",
+        "correct": true
+      },
+      {
+        "title": "Alphorn",
+        "year": "",
         "image": "https://via.placeholder.com/400x300/ff00ff/ffffff?text=Artwork+5",
         "correct": false
+      },
+      {
+        "title": "Recorder",
+        "year": "",
+        "image": "https://via.placeholder.com/400x300/ff00ff/ffffff?text=Artwork+5",
+        "correct": true
       }
     ]
   }
