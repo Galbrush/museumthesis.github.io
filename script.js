@@ -1,4 +1,3 @@
-// Quiz database will be loaded from JSON file
 let quizDatabase = {};
 let currentQuiz = null;
 
@@ -11,166 +10,32 @@ let startY = 0;
 let currentX = 0;
 let currentY = 0;
 let gameHistory = [];
-let playerAnswers = []; // Track player answers for explanation screen
+let playerAnswers = [];
 
 // Privacy notice handling
-function acceptPrivacy() {
+function acceptPrivacyNotice() {
   document.getElementById("privacy-notice").style.display = "none";
   document.querySelector(".menu-screen").style.display = "flex";
 }
 
-// Get today's date in YYYY-MM-DD format
+// Date Handling Functions here for format and getting quizzes
 function getTodayDate() {
   const today = new Date();
   return today.toISOString().split("T")[0];
 }
 
-// Get yesterday's date in YYYY-MM-DD format
 function getYesterdayDate() {
   const yesterday = new Date();
   yesterday.setDate(yesterday.getDate() - 1);
   return yesterday.toISOString().split("T")[0];
 }
 
-// Get day before yesterday's date in YYYY-MM-DD format
 function getDayBeforeYesterdayDate() {
   const dayBeforeYesterday = new Date();
   dayBeforeYesterday.setDate(dayBeforeYesterday.getDate() - 2);
   return dayBeforeYesterday.toISOString().split("T")[0];
 }
 
-// Get today's quiz (always returns the "today" quiz from JSON)
-function getTodaysQuiz() {
-  return quizDatabase["today"] || null;
-}
-
-// Get yesterday's quiz (always returns the "yesterday" quiz from JSON)
-function getYesterdaysQuiz() {
-  return quizDatabase["yesterday"] || null;
-}
-
-// Get day before yesterday's quiz (always returns the "day-before-yesterday" quiz from JSON)
-function getDayBeforeYesterdaysQuiz() {
-  return quizDatabase["day-before-yesterday"] || null;
-}
-
-// Check if today's quiz is available
-function isTodaysQuizAvailable() {
-  return getTodaysQuiz() !== null;
-}
-
-// Get game results from localStorage
-function getGameResultsFromStorage() {
-  try {
-    const saved = localStorage.getItem("artQuizResults");
-    return saved ? JSON.parse(saved) : [];
-  } catch (error) {
-    console.error("Error loading game results from localStorage:", error);
-    return [];
-  }
-}
-
-// Save game results to localStorage
-function saveGameResultsToStorage(results) {
-  try {
-    localStorage.setItem("artQuizResults", JSON.stringify(results));
-  } catch (error) {
-    console.error("Error saving game results to localStorage:", error);
-  }
-}
-
-// Load quiz data from JSON file
-async function loadQuizData() {
-  try {
-    const response = await fetch("quiz-data.json");
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    quizDatabase = await response.json();
-    console.log("Quiz data loaded successfully");
-  } catch (error) {
-    console.error("Error loading quiz data:", error);
-    // Fallback to empty database if file can't be loaded
-    quizDatabase = {};
-  }
-}
-
-// Load game history from localStorage
-function loadGameHistory() {
-  // Create consistent archive with relative dates
-  const archiveQuizzes = [];
-
-  // Add today's quiz
-  const todaysQuiz = getTodaysQuiz();
-  if (todaysQuiz) {
-    const savedResults = getGameResultsFromStorage();
-    const todayResult = savedResults.find(
-      (result) => result.quizType === "today",
-    );
-
-    archiveQuizzes.push({
-      date: getTodayDate(),
-      quizType: "today",
-      title: "Today's Quiz",
-      available: true,
-      played: !!todayResult,
-      score: todayResult ? `${todayResult.correct}/${todayResult.total}` : null,
-      accuracy: todayResult
-        ? Math.round((todayResult.correct / todayResult.total) * 100)
-        : null,
-    });
-  }
-
-  // Add yesterday's quiz
-  const yesterdaysQuiz = getYesterdaysQuiz();
-  if (yesterdaysQuiz) {
-    const savedResults = getGameResultsFromStorage();
-    const yesterdayResult = savedResults.find(
-      (result) => result.quizType === "yesterday",
-    );
-
-    archiveQuizzes.push({
-      date: getYesterdayDate(),
-      quizType: "yesterday",
-      title: "Yesterday's Quiz",
-      available: true,
-      played: !!yesterdayResult,
-      score: yesterdayResult
-        ? `${yesterdayResult.correct}/${yesterdayResult.total}`
-        : null,
-      accuracy: yesterdayResult
-        ? Math.round((yesterdayResult.correct / yesterdayResult.total) * 100)
-        : null,
-    });
-  }
-
-  // Add day before yesterday's quiz
-  const dayBeforeYesterdaysQuiz = getDayBeforeYesterdaysQuiz();
-  if (dayBeforeYesterdaysQuiz) {
-    const savedResults = getGameResultsFromStorage();
-    const dayBeforeResult = savedResults.find(
-      (result) => result.quizType === "day-before-yesterday",
-    );
-
-    archiveQuizzes.push({
-      date: getDayBeforeYesterdayDate(),
-      quizType: "day-before-yesterday",
-      title: formatDateForDisplay(getDayBeforeYesterdayDate()),
-      available: true,
-      played: !!dayBeforeResult,
-      score: dayBeforeResult
-        ? `${dayBeforeResult.correct}/${dayBeforeResult.total}`
-        : null,
-      accuracy: dayBeforeResult
-        ? Math.round((dayBeforeResult.correct / dayBeforeResult.total) * 100)
-        : null,
-    });
-  }
-
-  return archiveQuizzes;
-}
-
-// Format date for display (e.g., "2025-06-15" -> "June 15th Quiz")
 function formatDateForDisplay(dateString) {
   const date = new Date(dateString);
   const today = new Date();
@@ -196,34 +61,148 @@ function formatDateForDisplay(dateString) {
   );
 }
 
+function getTodaysQuiz() {
+  return quizDatabase["today"] || null;
+}
+
+function isTodaysQuizAvailable() {
+  return getTodaysQuiz() !== null;
+}
+
+function getYesterdaysQuiz() {
+  return quizDatabase["yesterday"] || null;
+}
+
+function getDayBeforeYesterdaysQuiz() {
+  return quizDatabase["day-before-yesterday"] || null;
+}
+
+// Functions for results and storage
+function getGameResultsFromStorage() {
+  try {
+    const saved = localStorage.getItem("artQuizResults");
+    return saved ? JSON.parse(saved) : [];
+  } catch (error) {
+    console.error("Error loading game results from localStorage:", error);
+    return [];
+  }
+}
+
+function saveGameResultsToStorage(results) {
+  try {
+    localStorage.setItem("artQuizResults", JSON.stringify(results));
+  } catch (error) {
+    console.error("Error saving game results to localStorage:", error);
+  }
+}
+
+// Quiz Data
+async function loadQuizData() {
+  try {
+    const response = await fetch("quiz-data.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    quizDatabase = await response.json();
+    console.log("Quiz data loaded successfully");
+  } catch (error) {
+    console.error("Error loading quiz data:", error);
+    // Fallback to empty database if file can't be loaded
+    quizDatabase = {};
+  }
+}
+
+// Load game history from localStorage
+function loadGameHistory() {
+  const archiveQuizzes = [];
+
+  const todaysQuiz = getTodaysQuiz();
+  if (todaysQuiz) {
+    const savedResults = getGameResultsFromStorage();
+    const todayResult = savedResults.find(
+      (result) => result.quizType === "today",
+    );
+
+    archiveQuizzes.push({
+      date: getTodayDate(),
+      quizType: "today",
+      title: "Today's Quiz",
+      available: true,
+      played: !!todayResult,
+      score: todayResult ? `${todayResult.correct}/${todayResult.total}` : null,
+      accuracy: todayResult
+        ? Math.round((todayResult.correct / todayResult.total) * 100)
+        : null,
+    });
+  }
+
+  const yesterdaysQuiz = getYesterdaysQuiz();
+  if (yesterdaysQuiz) {
+    const savedResults = getGameResultsFromStorage();
+    const yesterdayResult = savedResults.find(
+      (result) => result.quizType === "yesterday",
+    );
+
+    archiveQuizzes.push({
+      date: getYesterdayDate(),
+      quizType: "yesterday",
+      title: "Yesterday's Quiz",
+      available: true,
+      played: !!yesterdayResult,
+      score: yesterdayResult
+        ? `${yesterdayResult.correct}/${yesterdayResult.total}`
+        : null,
+      accuracy: yesterdayResult
+        ? Math.round((yesterdayResult.correct / yesterdayResult.total) * 100)
+        : null,
+    });
+  }
+
+  const dayBeforeYesterdaysQuiz = getDayBeforeYesterdaysQuiz();
+  if (dayBeforeYesterdaysQuiz) {
+    const savedResults = getGameResultsFromStorage();
+    const dayBeforeResult = savedResults.find(
+      (result) => result.quizType === "day-before-yesterday",
+    );
+
+    archiveQuizzes.push({
+      date: getDayBeforeYesterdayDate(),
+      quizType: "day-before-yesterday",
+      title: formatDateForDisplay(getDayBeforeYesterdayDate()),
+      available: true,
+      played: !!dayBeforeResult,
+      score: dayBeforeResult
+        ? `${dayBeforeResult.correct}/${dayBeforeResult.total}`
+        : null,
+      accuracy: dayBeforeResult
+        ? Math.round((dayBeforeResult.correct / dayBeforeResult.total) * 100)
+        : null,
+    });
+  }
+
+  return archiveQuizzes;
+}
+
 function saveGameResult() {
   const gameResult = {
     date: getTodayDate(),
-    quizType: currentQuiz.type, // Will be "today", "yesterday", or "day-before-yesterday"
+    quizType: currentQuiz.type,
     correct: correctAnswers,
     incorrect: incorrectAnswers,
     total: correctAnswers + incorrectAnswers,
     timestamp: new Date().toISOString(),
   };
 
-  // Get existing results
   let savedResults = getGameResultsFromStorage();
 
-  // Remove any existing result for this quiz type (in case they replay)
+  // allow for replay - remove old.
   savedResults = savedResults.filter(
     (result) => result.quizType !== gameResult.quizType,
   );
 
   // Add new result
   savedResults.unshift(gameResult);
-
-  // Keep only the last 30 results to avoid localStorage getting too large
-  savedResults = savedResults.slice(0, 30);
-
-  // Save to localStorage
   saveGameResultsToStorage(savedResults);
-
-  // Update the game history for display
   gameHistory = loadGameHistory();
 }
 
@@ -234,7 +213,6 @@ function showMenu() {
   document.querySelector(".explanation-screen").style.display = "none";
   document.querySelector(".archive-screen").style.display = "none";
 
-  // Update the Today's Quiz button when returning to menu
   updateTodaysQuizButton();
 }
 
@@ -251,7 +229,7 @@ function showArchive() {
 }
 
 function showExplanation() {
-  // Track explanation viewing
+  // clarity tracking
   if (typeof clarity !== "undefined") {
     clarity("event", "explanation_viewed", { quiz_type: currentQuiz.type });
   }
@@ -269,10 +247,8 @@ function populateExplanation() {
   const questionElement = document.getElementById("explanation-question");
   const listElement = document.getElementById("explanation-list");
 
-  // Display the quiz question
   questionElement.innerHTML = currentQuiz.question;
 
-  // Clear existing content
   listElement.innerHTML = "";
 
   if (playerAnswers.length === 0) {
@@ -281,7 +257,6 @@ function populateExplanation() {
     return;
   }
 
-  // Create explanation items for each artwork
   playerAnswers.forEach((answer, index) => {
     const artwork = currentQuiz.artworks[index];
     const isCorrect = answer.userAnswer === artwork.correct;
@@ -358,12 +333,12 @@ function startArchiveQuiz(quizType) {
     return;
   }
 
-  // Track archive quiz start
+  // clarity tracking
   if (typeof clarity !== "undefined") {
     clarity("event", "archive_quiz_started", { quiz_type: quizType });
   }
 
-  currentQuiz = { ...quiz, type: quizType }; // Add type for saving results
+  currentQuiz = { ...quiz, type: quizType };
 
   // Update question from JSON
   document.getElementById("quiz-question").innerHTML = currentQuiz.question;
@@ -378,7 +353,7 @@ function startArchiveQuiz(quizType) {
   currentCardIndex = 0;
   correctAnswers = 0;
   incorrectAnswers = 0;
-  playerAnswers = []; // Reset player answers
+  playerAnswers = [];
 
   loadCards();
 }
@@ -416,14 +391,13 @@ function startTodaysQuiz() {
     return;
   }
 
-  // Track quiz start
+  // clarity tracking
   if (typeof clarity !== "undefined") {
     clarity("event", "quiz_started", { quiz_type: "today" });
   }
 
-  currentQuiz = { ...todaysQuiz, type: "today" }; // Add type for saving results
+  currentQuiz = { ...todaysQuiz, type: "today" };
 
-  // Update question from JSON
   document.getElementById("quiz-question").innerHTML = currentQuiz.question;
 
   document.querySelector(".menu-screen").style.display = "none";
@@ -442,7 +416,7 @@ function startTodaysQuiz() {
 }
 
 function endGame() {
-  // Track quiz completion
+  // clarity tracking
   if (typeof clarity !== "undefined") {
     clarity("event", "quiz_completed", {
       quiz_type: currentQuiz.type,
@@ -466,11 +440,9 @@ function createCard(artwork, index) {
   card.className = "card";
   card.style.zIndex = currentQuiz.artworks.length - index;
 
-  // Check if artwork has an image
   const hasImage = artwork.image && artwork.image.trim() !== "";
 
   if (hasImage) {
-    // Card with image
     card.innerHTML = `
         <img src="${artwork.image}" alt="${artwork.title}" class="card-image">
         <div class="card-content">
@@ -479,7 +451,6 @@ function createCard(artwork, index) {
         </div>
     `;
   } else {
-    // Card without image - add no-image class
     card.classList.add("no-image");
     card.innerHTML = `
         <div class="card-content">
@@ -489,7 +460,6 @@ function createCard(artwork, index) {
     `;
   }
 
-  // Add touch and mouse event listeners for swiping
   card.addEventListener("mousedown", handleStart);
   card.addEventListener("touchstart", handleStart);
   card.addEventListener("mousemove", handleMove);
@@ -539,7 +509,7 @@ function handleMove(e) {
 
   card.style.transform = `translate(${deltaX}px, ${deltaY}px) rotate(${rotation}deg)`;
 
-  // Show swipe hints
+  // swipe hints
   const leftHint = document.querySelector(".swipe-hint.left");
   const rightHint = document.querySelector(".swipe-hint.right");
 
@@ -572,9 +542,9 @@ function handleEnd(e) {
   if (Math.abs(deltaX) > threshold) {
     // Swipe detected
     const isYes = deltaX > 0;
+    console.log("swipe detected");
     answerQuestion(isYes);
   } else {
-    // Snap back
     card.style.transform = "";
   }
 }
@@ -583,11 +553,11 @@ function loadCards() {
   if (!currentQuiz) return;
 
   const container = document.querySelector(".card-container");
-  // Clear existing cards
+  // Clear cards
   const existingCards = container.querySelectorAll(".card");
   existingCards.forEach((card) => card.remove());
 
-  // Add all remaining cards
+  // Add cards
   for (let i = currentCardIndex; i < currentQuiz.artworks.length; i++) {
     const card = createCard(currentQuiz.artworks[i], i);
     container.appendChild(card);
@@ -600,17 +570,7 @@ function answerQuestion(userAnswer) {
   const currentArtwork = currentQuiz.artworks[currentCardIndex];
   const isCorrect = userAnswer === currentArtwork.correct;
 
-  // Track answer with method detection
-  const answerMethod = isDragging ? "swipe" : "button";
-  if (typeof clarity !== "undefined") {
-    clarity("event", "question_answered", {
-      correct: isCorrect,
-      method: answerMethod,
-      question_number: currentCardIndex + 1,
-    });
-  }
-
-  // Store the player's answer for the explanation screen
+  // Store answers
   playerAnswers.push({
     artwork: currentArtwork,
     userAnswer: userAnswer,
@@ -655,26 +615,15 @@ function updateTodaysQuizButton() {
   const button = document.querySelector(".menu-option.primary");
   const todaysQuiz = getTodaysQuiz();
 
-  if (!todaysQuiz) {
-    button.textContent = "No Quiz Today";
-    button.disabled = true;
-    button.style.opacity = "0.5";
-    button.style.cursor = "not-allowed";
-    button.style.display = "block";
-    return;
-  }
-
   // Check if today's quiz has been played
   const savedResults = getGameResultsFromStorage();
-  const todayResult = savedResults.find(
+  const todayResultExists = savedResults.find(
     (result) => result.quizType === "today",
   );
 
-  if (todayResult) {
-    // User has already played today's quiz - hide the button
+  if (todayResultExists) {
     button.style.display = "none";
   } else {
-    // User hasn't played today's quiz - show the button
     const todayDate = new Date().toLocaleDateString("en-US", {
       month: "long",
       day: "numeric",
@@ -687,12 +636,11 @@ function updateTodaysQuizButton() {
   }
 }
 
-// Initialize game - load quiz data and show menu
+// Initialize game
 async function initializeGame() {
   await loadQuizData();
   gameHistory = loadGameHistory();
 
-  // Update the "Today's Quiz" button based on availability
   updateTodaysQuizButton();
 }
 
