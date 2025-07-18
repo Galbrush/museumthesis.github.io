@@ -1,35 +1,53 @@
 {
   "today": {
-    "question": "Is this artwork done by a <strong>woman</strong>?",
+    "question": "Which of these statements is correct?",
     "artworks": [
       {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/ff0000/ffffff?text=Artwork+1",
-        "correct": false
-      },
-      {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/00ff00/ffffff?text=Artwork+2",
+        "title": "Cleopatra lived closer to the invention of the iPhone than the construction of the pyramids.",
+        "year": "",
+        "image": "",
         "correct": true
       },
       {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/0000ff/ffffff?text=Artwork+3",
+        "title": "McDonald's is older than David Attenborough.",
+        "year": "",
+        "image": "",
         "correct": false
       },
       {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/ffff00/000000?text=Artwork+4",
+        "title": "Star Wars was in the cinema the same year that France last executed a person by guillotine.",
+        "year": "",
+        "image": "",
         "correct": true
       },
       {
-        "title": "Example Artwork",
-        "year": "1999",
-        "image": "https://via.placeholder.com/400x300/ff00ff/ffffff?text=Artwork+5",
+        "title": "The fax machine is older than the telephone.",
+        "year": "",
+        "image": "",
+        "correct": true
+      },
+      {
+        "title": "Ketchup predates the novel Pride and Prejudice.",
+        "year": "",
+        "image": "",
+        "correct": true
+      },
+      {
+        "title": "The Eiffel Tower is older than the Statue of Liberty.",
+        "year": "",
+        "image": "",
+        "correct": false
+      },
+      {
+        "title": "Oxford University existed for hundrets of years before the Aztec Empire was founded.",
+        "year": "",
+        "image": "",
+        "correct": true
+      },
+      {
+        "title": "The Wright Brothers were still alive at the time of the moon landing.",
+        "year": "",
+        "image": "",
         "correct": false
       }
     ]
