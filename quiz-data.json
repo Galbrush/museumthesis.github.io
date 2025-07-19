@@ -111,49 +111,49 @@
       {
         "title": "Saxophone",
         "year": "",
-        "image": "https://via.placeholder.com/400x300/ff0000/ffffff?text=Artwork+1",
+        "image": "",
         "correct": true
       },
       {
         "title": "Trombone",
         "year": "",
-        "image": "https://via.placeholder.com/400x300/00ff00/ffffff?text=Artwork+2",
+        "image": "",
         "correct": false
       },
       {
         "title": "Clarinet",
         "year": "",
-        "image": "https://via.placeholder.com/400x300/0000ff/ffffff?text=Artwork+3",
+        "image": "",
         "correct": true
       },
       {
         "title": "Trumpet",
         "year": "",
-        "image": "https://via.placeholder.com/400x300/ffff00/000000?text=Artwork+4",
+        "image": "",
         "correct": false
       },
       {
         "title": "Flute",
         "year": "",
-        "image": "https://via.placeholder.com/400x300/ff00ff/ffffff?text=Artwork+5",
+        "image": "",
         "correct": true
       },
       {
         "title": "Occarina",
         "year": "",
-        "image": "https://via.placeholder.com/400x300/ff00ff/ffffff?text=Artwork+5",
+        "image": "",
         "correct": true
       },
       {
         "title": "Alphorn",
         "year": "",
-        "image": "https://via.placeholder.com/400x300/ff00ff/ffffff?text=Artwork+5",
+        "image": "",
         "correct": false
       },
       {
         "title": "Recorder",
         "year": "",
-        "image": "https://via.placeholder.com/400x300/ff00ff/ffffff?text=Artwork+5",
+        "image": "",
         "correct": true
       }
     ]
