@@ -409,25 +409,12 @@ body {
     min-width: 120px;
 }
 
-.menu-btn:hover,
-.explanation-btn:hover {
-    background: var(--btn-blue-hover);
-}
-
 .back-btn {
     background: var(--btn-gray);
 }
 
-.back-btn:hover {
-    background: var(--btn-gray-hover);
-}
-
 .explanation-btn {
     background: var(--btn-purple);
-}
-
-.explanation-btn:hover {
-    background: var(--btn-purple-hover);
 }
 
 /* Archive Screen */
