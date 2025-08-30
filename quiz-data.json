@@ -1,7 +1,7 @@
 {
   "today": {
     "question": "Which of these statements is correct?",
-    "artworks": [
+    "items": [
       {
         "title": "Cleopatra lived closer to the invention of the iPhone than the construction of the pyramids.",
         "year": "",
@@ -54,7 +54,7 @@
   },
   "yesterday": {
     "question": "Which of the following describes an art movement?",
-    "artworks": [
+    "items": [
       {
         "title": "Cubism",
         "year": "20th century",
@@ -107,7 +107,7 @@
   },
   "day-before-yesterday": {
     "question": "Which of these instruments is a woodwind instrument?",
-    "artworks": [
+    "items": [
       {
         "title": "Saxophone",
         "year": "",

@@ -12,13 +12,13 @@ let currentY = 0;
 let gameHistory = [];
 let playerAnswers = [];
 
-// Privacy notice handling
+// ------------------------Privacy notice -------------------------
 function acceptPrivacyNotice() {
   document.getElementById("privacy-notice").style.display = "none";
   document.querySelector(".menu-screen").style.display = "flex";
 }
 
-// Date Handling Functions here for format and getting quizzes
+// Date Functions here for format and getting quizzes, i need today, yesterday and vorgestern
 function getTodayDate() {
   const today = new Date();
   return today.toISOString().split("T")[0];
@@ -53,8 +53,9 @@ function formatDateForDisplay(dateString) {
     return "Yesterday's Quiz";
   }
 
+//format a date to UK format: https://stackoverflow.com/questions/54254556/how-to-format-a-javascript-date-to-uk-format
   return (
-    date.toLocaleDateString("en-US", {
+    date.toLocaleDateString("en-GB", {
       month: "long",
       day: "numeric",
     }) + " Quiz"
@@ -63,10 +64,6 @@ function formatDateForDisplay(dateString) {
 
 function getTodaysQuiz() {
   return quizDatabase["today"] || null;
-}
-
-function isTodaysQuizAvailable() {
-  return getTodaysQuiz() !== null;
 }
 
 function getYesterdaysQuiz() {
@@ -81,6 +78,7 @@ function getDayBeforeYesterdaysQuiz() {
 function getGameResultsFromStorage() {
   try {
     const saved = localStorage.getItem("artQuizResults");
+    console.log('GOOD: Game Results fetched from storage');
     return saved ? JSON.parse(saved) : [];
   } catch (error) {
     console.error("Error loading game results from localStorage:", error);
@@ -91,28 +89,31 @@ function getGameResultsFromStorage() {
 function saveGameResultsToStorage(results) {
   try {
     localStorage.setItem("artQuizResults", JSON.stringify(results));
+    console.log('GOOD: game results saved to storage');
   } catch (error) {
     console.error("Error saving game results to localStorage:", error);
   }
 }
 
-// Quiz Data
+// get quiz data from json file
 async function loadQuizData() {
+  console.log('start loading quiz data...');
   try {
     const response = await fetch("quiz-data.json");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     quizDatabase = await response.json();
-    console.log("Quiz data loaded successfully");
+    console.log('GOOD: quiz data loaded');
+    console.log('quizzes: ', Object.keys(quizDatabase));
   } catch (error) {
     console.error("Error loading quiz data:", error);
-    // Fallback to empty database if file can't be loaded
+    // if it can't be found - fall back to empty database. 
     quizDatabase = {};
   }
 }
 
-// Load game history from localStorage
+// load game history from localStorage to show in archive
 function loadGameHistory() {
   const archiveQuizzes = [];
 
@@ -258,11 +259,11 @@ function populateExplanation() {
   }
 
   playerAnswers.forEach((answer, index) => {
-    const artwork = currentQuiz.artworks[index];
-    const isCorrect = answer.userAnswer === artwork.correct;
+    const item = currentQuiz.items[index];
+    const isCorrect = answer.userAnswer === item.correct;
 
-    const item = document.createElement("div");
-    item.className = isCorrect
+    const domElement = document.createElement("div");
+    domElement.className = isCorrect
       ? "explanation-item correct"
       : "explanation-item incorrect";
 
@@ -270,13 +271,13 @@ function populateExplanation() {
     const statusClass = isCorrect ? "correct" : "incorrect";
 
     const userAnswerText = answer.userAnswer ? "YES" : "NO";
-    const correctAnswerText = artwork.correct ? "YES" : "NO";
+    const correctAnswerText = item.correct ? "YES" : "NO";
 
-    item.innerHTML = `
+    domElement.innerHTML = `
       <div class="explanation-header">
         <div class="explanation-title-year">
-          <div class="explanation-artwork-title">${artwork.title}</div>
-          <div class="explanation-artwork-year">${artwork.year}</div>
+          <div class="explanation-item-title">${item.title}</div>
+          <div class="explanation-item-year">${item.year}</div>
         </div>
         <div class="explanation-status ${statusClass}">${statusText}</div>
       </div>
@@ -285,7 +286,7 @@ function populateExplanation() {
       </div>
     `;
 
-    listElement.appendChild(item);
+    listElement.appendChild(domElement);
   });
 }
 
@@ -318,6 +319,7 @@ function populateArchive() {
 }
 
 function startArchiveQuiz(quizType) {
+  console.log('archive quiz starting...');
   let quiz = null;
 
   if (quizType === "today") {
@@ -358,38 +360,17 @@ function startArchiveQuiz(quizType) {
   loadCards();
 }
 
-function formatDate(dateString) {
-  const date = new Date(dateString);
-  const today = new Date();
-  const yesterday = new Date(today);
-  yesterday.setDate(yesterday.getDate() - 1);
-
-  if (dateString === today.toISOString().split("T")[0]) {
-    return "Today";
-  } else if (dateString === yesterday.toISOString().split("T")[0]) {
-    return "Yesterday";
-  } else {
-    return date.toLocaleDateString("en-US", {
-      weekday: "short",
-      month: "short",
-      day: "numeric",
-    });
-  }
-}
-
-function showGameDetails(game) {
-  alert(
-    `Quiz from ${formatDate(game.date)}\n\nScore: ${game.correct}/${game.total} correct\nAccuracy: ${Math.round((game.correct / game.total) * 100)}%`,
-  );
-}
 
 function startTodaysQuiz() {
+  console.log('starting today quiz...');
   const todaysQuiz = getTodaysQuiz();
 
   if (!todaysQuiz) {
     alert("No quiz available for today. Please check back later!");
     return;
   }
+
+  console.log('GOOD: quiz loaded and startable. Today question: ', todaysQuiz.question);
 
   // clarity tracking
   if (typeof clarity !== "undefined") {
@@ -411,7 +392,7 @@ function startTodaysQuiz() {
   correctAnswers = 0;
   incorrectAnswers = 0;
   playerAnswers = []; // Reset player answers
-
+  console.log('game reset. can be started again');
   loadCards();
 }
 
@@ -435,27 +416,27 @@ function endGame() {
   document.getElementById("incorrect-count").textContent = incorrectAnswers;
 }
 
-function createCard(artwork, index) {
+function createCard(item, index) {
   const card = document.createElement("div");
   card.className = "card";
-  card.style.zIndex = currentQuiz.artworks.length - index;
+  card.style.zIndex = currentQuiz.items.length - index;
 
-  const hasImage = artwork.image && artwork.image.trim() !== "";
+  const hasImage = item.image && item.image.trim() !== "";
 
   if (hasImage) {
     card.innerHTML = `
-        <img src="${artwork.image}" alt="${artwork.title}" class="card-image">
+        <img src="${item.image}" alt="${item.title}" class="card-image">
         <div class="card-content">
-            <h2 class="card-title">${artwork.title}</h2>
-            <p class="card-year">${artwork.year}</p>
+            <h2 class="card-title">${item.title}</h2>
+            <p class="card-year">${item.year}</p>
         </div>
     `;
   } else {
     card.classList.add("no-image");
     card.innerHTML = `
         <div class="card-content">
-            <h2 class="card-title">${artwork.title}</h2>
-            <p class="card-year">${artwork.year}</p>
+            <h2 class="card-title">${item.title}</h2>
+            <p class="card-year">${item.year}</p>
         </div>
     `;
   }
@@ -509,7 +490,7 @@ function handleMove(e) {
 
   card.style.transform = `translate(${deltaX}px, ${deltaY}px) rotate(${rotation}deg)`;
 
-  // swipe hints
+  // swipe hints showing
   const leftHint = document.querySelector(".swipe-hint.left");
   const rightHint = document.querySelector(".swipe-hint.right");
 
@@ -535,12 +516,12 @@ function handleEnd(e) {
   const deltaX = currentX - startX;
   const threshold = 100;
 
-  // Hide swipe hints
+  // hide swipe hints when done
   document.querySelector(".swipe-hint.left").classList.remove("show");
   document.querySelector(".swipe-hint.right").classList.remove("show");
 
   if (Math.abs(deltaX) > threshold) {
-    // Swipe detected
+    // swipe detected
     const isYes = deltaX > 0;
     console.log("swipe detected");
     answerQuestion(isYes);
@@ -550,29 +531,31 @@ function handleEnd(e) {
 }
 
 function loadCards() {
+  console.log('loading cards...');
   if (!currentQuiz) return;
 
+  console.log('total cards: ', currentQuiz.items.length);
   const container = document.querySelector(".card-container");
-  // Clear cards
+  // clearing cards
   const existingCards = container.querySelectorAll(".card");
   existingCards.forEach((card) => card.remove());
 
-  // Add cards
-  for (let i = currentCardIndex; i < currentQuiz.artworks.length; i++) {
-    const card = createCard(currentQuiz.artworks[i], i);
+  // add cards
+  for (let i = currentCardIndex; i < currentQuiz.items.length; i++) {
+    const card = createCard(currentQuiz.items[i], i);
     container.appendChild(card);
   }
 }
 
 function answerQuestion(userAnswer) {
-  if (!currentQuiz || currentCardIndex >= currentQuiz.artworks.length) return;
+  if (!currentQuiz || currentCardIndex >= currentQuiz.items.length) return;
 
-  const currentArtwork = currentQuiz.artworks[currentCardIndex];
-  const isCorrect = userAnswer === currentArtwork.correct;
+  const currentItem = currentQuiz.items[currentCardIndex];
+  const isCorrect = userAnswer === currentItem.correct;
 
-  // Store answers
+  // store answers
   playerAnswers.push({
-    artwork: currentArtwork,
+    item: currentItem,
     userAnswer: userAnswer,
     isCorrect: isCorrect,
   });
@@ -583,7 +566,7 @@ function answerQuestion(userAnswer) {
     incorrectAnswers++;
   }
 
-  // Animate card out
+  // animation for card out
   const card = document.querySelector(".card-container .card");
   if (card) {
     const direction = userAnswer ? 1 : -1;
@@ -597,25 +580,18 @@ function answerQuestion(userAnswer) {
 
   currentCardIndex++;
 
-  if (currentCardIndex >= currentQuiz.artworks.length) {
+  if (currentCardIndex >= currentQuiz.items.length) {
     setTimeout(endGame, 500);
   }
 }
 
-function endGame() {
-  saveGameResult();
-  document.querySelector(".game-screen").style.display = "none";
-  document.querySelector(".results-screen").style.display = "block";
-  document.getElementById("correct-count").textContent = correctAnswers;
-  document.getElementById("incorrect-count").textContent = incorrectAnswers;
-}
 
-// Update the Today's Quiz button based on availability and completion status
+// showing play today's quiz only if it hasn't been played today yet. otherwise just show archive
 function updateTodaysQuizButton() {
   const button = document.querySelector(".menu-option.primary");
   const todaysQuiz = getTodaysQuiz();
 
-  // Check if today's quiz has been played
+  // check if today quiz has been played
   const savedResults = getGameResultsFromStorage();
   const todayResultExists = savedResults.find(
     (result) => result.quizType === "today",
@@ -636,13 +612,14 @@ function updateTodaysQuizButton() {
   }
 }
 
-// Initialize game
-async function initializeGame() {
+// initialise game
+async function initialiseGame() {
+  console.log('initialising game...');
   await loadQuizData();
   gameHistory = loadGameHistory();
 
   updateTodaysQuizButton();
 }
 
-// Start initialization when page loads
-window.addEventListener("DOMContentLoaded", initializeGame);
+// start initialisation when page loads
+window.addEventListener("DOMContentLoaded", initialiseGame);
